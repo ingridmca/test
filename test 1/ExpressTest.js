@@ -14,4 +14,6 @@ app.get("/hp/characters", function (req, res) {
     });
 });
 
-app.listen(3000);
+const server = app.listen();
+
+console.log(`listening on localhost:${server.address().port}`);
